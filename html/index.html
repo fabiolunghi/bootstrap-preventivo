@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richiesta preventivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- Aggiungo la navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bool Factory</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link disabled" aria-disabled="true">Home</a>
+          <a class="nav-link disabled" aria-disabled="true">Servizi</a>
+          <a class="nav-link disabled" aria-disabled="true">Contatti</a>
+        </div>
+      </div>
+    </div>
+</nav>
+<!-- Titolo della pagina -->
+<header>
+    <h3>Richiesta Preventivo</h3>
+</header>
+<!-- Form info cliente -->
+<body>
+    <main>
+        <p>Compila il form per richiedere un preventivo per i nostri 
+        servizi di sviluppo</p>
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+         </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Cognome</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Email</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Tipo di Lavoro</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Seleziona il  tipo di lavoro</option>
+                <option value="1">Sviluppo backend</option>
+                <option value="2">Sviluppo fontend</option>
+                <option value="3">Analisi progettuale</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Textarea con Bootstrap 5</label>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Codice promozionale (opzionale)</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            Accetto la Privacy Policy
+            </label>
+        </div>
+        <button type="button" class="btn btn-primary">Calcola Preventivo</button>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="./js/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
