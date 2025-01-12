@@ -32,46 +32,53 @@
     <main>
         <div class="container">
             <div class="row">
-                <p>Compila il form per richiedere un preventivo per i nostri 
-                servizi di sviluppo</p>
-                <div class="col-7">
-                    <label for="formGroupExampleInput" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                </div>
-                <div class="col-7">
-                    <label for="formGroupExampleInput" class="form-label">Cognome</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                </div>
-                <div class="col-7">
-                    <label for="formGroupExampleInput" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                </div>
-                <div class="col-7">
-                    <label for="formGroupExampleInput" class="form-label">Tipo di Lavoro</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Seleziona il  tipo di lavoro</option>
-                        <option value="1">Sviluppo backend</option>
-                        <option value="2">Sviluppo fontend</option>
-                        <option value="3">Analisi progettuale</option>
-                    </select>
-                </div>
-                <!-- Aggiungo una card con i contatti di Boolean -->
-                <div class="card" style="width: 300px;">
-                    <img src="..." class="card-img-top" alt="..." style="height: 200px; background-color: dimgray;">
-                    <div class="card-body">
-                    <h5 class="card-title">I nostri Contatti</h5>
-                    <p class="card-text">Se hai bisogno di aiuto, puoi contattarci:</p>
+                <!-- Colonna per il form -->
+                <div class="col-md-8">
+                    <p>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo</p>
+                    
+                    <div class="col-12 mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
                     </div>
-                    <ul class="list-group list-group-flush">
-                    <li class="list-group-item">help@boolfactory.test</li>
-                    <li class="list-group-item">+1122334455</li>
-                    </ul>
-                    <div class="card-body">
-                    <a href="#" class="card-link">Help desk</a>
+                    <div class="col-12 mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Tipo di Lavoro</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleziona il tipo di lavoro</option>
+                            <option value="1">Sviluppo backend</option>
+                            <option value="2">Sviluppo frontend</option>
+                            <option value="3">Analisi progettuale</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <!-- Colonna per la card -->
+                <div class="col-md-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="..." class="card-img-top" alt="..." style="height: 200px; background-color: dimgray;">
+                        <div class="card-body">
+                            <h5 class="card-title">I nostri Contatti</h5>
+                            <p class="card-text">Se hai bisogno di aiuto, puoi contattarci:</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">help@boolfactory.test</li>
+                            <li class="list-group-item">+1122334455</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Help desk</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
 
 <!-- Aggiungo text area, codice promozionale e privacy policy -->
         <div class="col-7">
