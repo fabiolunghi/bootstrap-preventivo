@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <!-- Aggiungo la navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container">
       <a class="navbar-brand" href="#">Bool Factory</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
 <!-- Form info cliente -->
 <body>
     <main>
-        <div class="container">
+        <div class="container mt-3">
             <h3>Richiesta Preventivo</h3>
             <div class="row">
                 <!-- Colonna per il form -->
@@ -55,10 +55,8 @@
                         </select>
                     </div>
                     <div class="col-12 mb-3">
-                        <label for="formGroupExampleInput" class="form-label">Textarea con Bootstrap 5</label>
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                        </div>
+                        <label class="form-label">Textarea con Bootstrap 5</label>
+                        <textarea class="form-control" id="textarea"></textarea>
                     </div>
                     <div class="col-12 mb-3">
                         <label for="formGroupExampleInput" class="form-label">Codice promozionale (opzionale)</label>
