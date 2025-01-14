@@ -23,14 +23,11 @@
       </div>
     </div>
 </nav>
-<!-- Titolo della pagina -->
-<header>
-    <h3>Richiesta Preventivo</h3>
-</header>
 <!-- Form info cliente -->
 <body>
     <main>
         <div class="container">
+            <h3>Richiesta Preventivo</h3>
             <div class="row">
                 <!-- Colonna per il form -->
                 <div class="col-md-8">
@@ -57,6 +54,23 @@
                             <option value="3">Analisi progettuale</option>
                         </select>
                     </div>
+                    <div class="col-12 mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Textarea con Bootstrap 5</label>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Codice promozionale (opzionale)</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="form-check, col-12 mb-3">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                        Accetto la Privacy Policy
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary">Calcola Preventivo</button>
                 </div>
         
                 <!-- Colonna per la card -->
@@ -78,26 +92,6 @@
                 </div>
             </div>
         </div>
-        
-
-<!-- Aggiungo text area, codice promozionale e privacy policy -->
-        <div class="col-7">
-            <label for="formGroupExampleInput" class="form-label">Textarea con Bootstrap 5</label>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            </div>
-        </div>
-        <div class="col-7">
-            <label for="formGroupExampleInput" class="form-label">Codice promozionale (opzionale)</label>
-            <input type="text" class="form-control" id="formGroupExampleInput">
-        </div>
-        <div class="form-check, col-7">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-            Accetto la Privacy Policy
-            </label>
-        </div>
-        <button type="button" class="btn btn-primary">Calcola Preventivo</button>
     </main>
     <footer>
         
