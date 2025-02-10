@@ -34,15 +34,24 @@
                     
                     <div class="col-12 mb-3">
                         <label for="formGroupExampleInput" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput">
+                        <input type="text" class="form-control" id="nome" required>
+                        <div class="invalid-feedback">
+                            Inserisci il tuo nome
+                        </div>
                     </div>
                     <div class="col-12 mb-3">
                         <label for="formGroupExampleInput" class="form-label">Cognome</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput">
+                        <input type="text" class="form-control" id="cognome" required>
+                        <div class="invalid-feedback">
+                            Inserisci il tuo cognome
+                        </div>
                     </div>
                     <div class="col-12 mb-3">
                         <label for="formGroupExampleInput" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput">
+                        <input type="text" class="form-control" id="email" required>
+                        <div class="invalid-feedback">
+                            Inserisci la tua email
+                        </div>
                     </div>
                     <div class="col-12 mb-3">
                         <label for="formGroupExampleInput" class="form-label">Tipo di Lavoro</label>
@@ -60,6 +69,12 @@
                     <div class="col-12 mb-3">
                         <label for="formGroupExampleInput" class="form-label">Codice promozionale (opzionale)</label>
                         <input type="text" class="form-control" id="promoCode">
+                        <div class="invalid-feedback">
+                            Codice promozionale non valido, non hai diritto allo sconto,
+                        </div>
+                        <div class="valid-feedback">
+                            Codice promozionale valido, lo sconto è stato applicato
+                        </div>
                     </div>
                     <div class="form-check, col-12 mb-3">
                         <input class="form-check-input" type="checkbox" id="gridCheck">

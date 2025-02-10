@@ -12,18 +12,18 @@ document.getElementById('calculateButton').addEventListener('click', function ()
     // Ore di lavoro predefinite
     const hours = 10;
 
-    // Ottieni il tipo di lavoro selezionato
+    // Ottiengo il tipo di lavoro selezionato
     const workTypeElement = document.querySelector('select');
     const workType = workTypeElement.value;
 
-    // Ottieni il codice promozionale
+    // Ottiengo il codice promozionale
     const promoCodeElement = document.querySelector('#promoCode');
     const promoCode = promoCodeElement.value;
 
-    // Ottieni l'area di risultato
+    // Ottiengo l'area di risultato
     const resultElement = document.getElementById('result');
 
-    // Calcola il prezzo base
+    // Calcolo il prezzo base
     let hourlyRate;
     if (workType === '1') hourlyRate = prices.backend;
     else if (workType === '2') hourlyRate = prices.frontend;
@@ -31,12 +31,18 @@ document.getElementById('calculateButton').addEventListener('click', function ()
 
     let finalPrice = hourlyRate * hours;
 
-    // Applica lo sconto se il codice è valido
+    // Applico lo sconto se il codice è valido
     if (promoCode && validPromoCodes.includes(promoCode)) {
+        promoCodeElement.classList.add('is-valid');
+        promoCodeElement.classList.remove('is-invalid');
         finalPrice *= 0.75;
+    } else if (promoCode){
+        promoCodeElement.classList.add('is-invalid');
+        promoCodeElement.classList.remove('is-valid');
     }
 
-    // Mostra il prezzo finale
+
+    // Mostro il prezzo finale
     resultElement.innerHTML = `
         <strong>Prezzo finale:</strong><br>
         <span class="fs-4">${finalPrice.toFixed(2)} €</span>
