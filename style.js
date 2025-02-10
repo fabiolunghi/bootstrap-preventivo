@@ -1,4 +1,39 @@
+//controlli input
+
 document.getElementById('calculateButton').addEventListener('click', function () {
+    
+    //controllo input nome
+    const nomeInput = document.querySelector('#nome');
+    const nomeValue = nomeInput.value;
+    if (nomeValue.length > 2) {
+        nomeInput.classList.add('is-valid');
+        nomeInput.classList.remove('is-invalid');
+    }else{
+        nomeInput.classList.add('is-invalid');
+        nomeInput.classList.remove('is-valid');}
+
+    //controllo input cognome
+    const cognomeInput = document.querySelector('#cognome');
+    const cognomeValue = cognomeInput.value;
+    if (cognomeValue.length > 2) {
+        cognomeInput.classList.add('is-valid');
+        cognomeInput.classList.remove('is-invalid');
+    }else{
+        cognomeInput.classList.add('is-invalid');
+        cognomeInput.classList.remove('is-valid');}
+
+    //controllo input email
+    const emailInput = document.querySelector('#email');
+    const emailValue = emailInput.value;
+    if (emailValue.includes('@')) {
+        emailInput.classList.add('is-valid');
+        emailInput.classList.remove('is-invalid');
+    }else{
+        emailInput.classList.add('is-invalid');
+        emailInput.classList.remove('is-valid');}
+
+//codice sconto
+
     // Prezzi orari
     const prices = {
         backend: 20.50,
